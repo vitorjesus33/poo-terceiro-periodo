@@ -1,4 +1,4 @@
-package SANDRO_RAMOS.primeirob.aulas.aulaum;
+package primeirob.aulas.aulaum;
 
 import java.util.Scanner;
 
