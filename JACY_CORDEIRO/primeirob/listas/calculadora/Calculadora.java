@@ -1,4 +1,4 @@
-package poo;
+package calculadora;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ public class Calculadora {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        Operacoes n = new Operacoes(); // Verifique se essa linha está correta
+        Operacoes n = new Operacoes();
 
         System.out.println("Escolha uma operação: ");
         System.out.println("1. Soma");
@@ -53,3 +53,27 @@ public class Calculadora {
         System.out.println("\nO resultado de " + x + " " + mapOperacao.get(operacao) + " por " + y + " é igual a " + resultado + "\n");
     }
 }
+
+class Operacoes {
+    public double soma(double a, double b) {
+        return a + b;
+    }
+
+    public double subtracao(double a, double b) {
+        return a - b;
+    }
+
+    public double multiplicacao(double a, double b) {
+        return a * b;
+    }
+
+    public double divisao(double a, double b) {
+        if (b != 0) {
+            return a / b;
+        } else {
+            System.out.println("Divisão por zero não é permitida!");
+            return 0;
+        }
+    }
+}
+

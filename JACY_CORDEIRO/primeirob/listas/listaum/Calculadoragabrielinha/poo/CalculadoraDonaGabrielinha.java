@@ -1,4 +1,4 @@
-package DONA_GABRIELINHA.Calculadoragabrielinha.poo;
+package listaum.Calculadoragabrielinha.poo;
 
 import java.util.Scanner;
 
