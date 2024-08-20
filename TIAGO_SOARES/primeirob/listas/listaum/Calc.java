@@ -1,4 +1,4 @@
-package primeirob.aulas.aulaum;
+package primeirob.listas.listaum;
 
 import java.util.Scanner;
 
