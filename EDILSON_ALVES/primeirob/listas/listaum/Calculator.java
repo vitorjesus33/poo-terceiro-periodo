@@ -38,6 +38,8 @@ public class Calculator {
       
     }
    }while(opcao != 3);
+
+   scan.close();
     
   }
 
