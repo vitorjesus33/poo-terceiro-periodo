@@ -8,11 +8,14 @@ public class calculadora {
         int opcao;
 
         do {
-            System.out.println("Menu:");
-            System.out.println("[1] - Calcular Preço Total");
-            System.out.println("[2] - Calcular Troco");
-            System.out.println("[3] - Sair");
-            System.out.print("Escolha uma opção: ");
+            System.out.println(" ____________________________");
+            System.out.println("|          - Menu -          |");
+            System.out.println("| [1] - Calcular Preço Total |");
+            System.out.println("| [2] - Calcular Troco       |");
+            System.out.println("| [3] - Sair                 |");
+            System.out.println(" ----------------------------");
+            System.out.print(" -> Escolha uma opção: ");
+            
             opcao = scanner.nextInt();
 
             switch (opcao) {
@@ -37,19 +40,19 @@ public class calculadora {
         System.out.print("Digite a quantidade de plantas: ");
         int quantidade = scanner.nextInt();
         System.out.print("Digite o preço unitário da planta: ");
-        float precoUnitario = scanner.nextFloat();
+        double precoUnitario = scanner.nextDouble();
 
-        float precoTotal = quantidade * precoUnitario;
+        double precoTotal = quantidade * precoUnitario;
         System.out.printf("O preço total é: R$ %.2f%n", precoTotal);
     }
 
     public static void calcularTroco(Scanner scanner) {
         System.out.print("Digite o valor recebido: ");
-        float valorRecebido = scanner.nextFloat();
+        double valorRecebido = scanner.nextDouble();
         System.out.print("Digite o valor total da compra: ");
-        float valorTotal = scanner.nextFloat();
+        double valorTotal = scanner.nextDouble();
 
-        float troco = valorRecebido - valorTotal;
-        System.out.printf("O troco é: R$ %.2f%n", troco);
+        double troco = valorRecebido - valorTotal;
+        System.out.printf("%n O troco é: R$ %.2f%n%n", troco);
     }
 }
