@@ -2,6 +2,7 @@ package JOAO_VITOR_NOVAK_GAVA.primeirob.aulaum;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,10 +16,12 @@ public class Historico {
     public Historico(String nomeArquivo) {
         Historico.nomeArquivo = nomeArquivo;
 
-        // Criar o arquivo CSV com o cabeçalho
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo))) {
-            writer.write("Quantidade,Total,Desconto");
-            writer.newLine();
+        // Criar o arquivo CSV com o cabeçalho, se necessário
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(nomeArquivo, true))) {
+            if (new File(nomeArquivo).length() == 0) { // Verifica se o arquivo está vazio
+                writer.write("Quantidade,Total,Desconto");
+                writer.newLine();
+            }
         } catch (IOException e) {
         }
     }
