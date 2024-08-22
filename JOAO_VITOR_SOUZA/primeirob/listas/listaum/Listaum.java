@@ -1,8 +1,8 @@
-package JOAO_VITOR_SOUZA.primeirob.listas;
+package JOAO_VITOR_SOUZA.primeirob.listas.listaum;
 
 import java.util.Scanner;
 
-public class CalculadoraDeVendas {
+public class Listaum {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
