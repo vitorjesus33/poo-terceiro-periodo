@@ -13,6 +13,8 @@ public class Botoes {
         System.out.println("Informe o valor da planta");
         double valor = botao.nextDouble();
 
+        System.out.println("Preço total: ");     
+
         return quantidade * valor;
     }
     protected static double Troco() {
