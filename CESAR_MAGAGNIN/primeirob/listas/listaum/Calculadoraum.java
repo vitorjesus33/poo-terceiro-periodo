@@ -1,6 +1,6 @@
-package CESAR_MAGAGNIN.primeirob.listas.calculadora_dona_gabrielinha;
+package CESAR_MAGAGNIN.primeirob.listas.listaum;
 import java.util.Scanner;
-public class Calculadora {
+public class Calculadoraum {
    public static void main (String[] args) {
       Scanner scanner = new Scanner(System.in);
       System.out.println("Menu Console:\n[1] - Calcular Preço total\n[2] - Calcular Troco\n[3] - Sair\nEscolha uma opção: ");
