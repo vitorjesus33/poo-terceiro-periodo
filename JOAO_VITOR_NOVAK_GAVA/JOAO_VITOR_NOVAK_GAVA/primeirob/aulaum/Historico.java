@@ -11,7 +11,7 @@ import java.util.List;
 
 public class Historico {
     private static final List<Registro> registros = new ArrayList<>();
-    private static String nomeArquivo;
+    private static String nomeArquivo = "historico.csv";
 
     public Historico(String nomeArquivo) {
         Historico.nomeArquivo = nomeArquivo;
