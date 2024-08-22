@@ -2,7 +2,7 @@ package VINICIUS_PASCOATO.primeirob.listas.listaum;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class Calculadoraum {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
