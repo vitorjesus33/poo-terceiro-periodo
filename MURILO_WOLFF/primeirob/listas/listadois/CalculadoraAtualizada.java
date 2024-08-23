@@ -53,7 +53,7 @@ public class CalculadoraAtualizada {
         boolean descontoAplicado = false;
 
         if (qtdPlantas > 10) {
-            valorTotal *= 0.95; // Aplicar desconto de 5%
+            valorTotal *= 0.95;
             descontoAplicado = true;
         }
 
@@ -72,7 +72,7 @@ public class CalculadoraAtualizada {
     }
 
     static void verificarVendas(Scanner leitor) {
-        int tamanhoPagina = 5; // Define o número de vendas por página
+        int tamanhoPagina = 5;
         int paginaAtual = 0;
 
         while (paginaAtual * tamanhoPagina < registroVendas.size()) {
