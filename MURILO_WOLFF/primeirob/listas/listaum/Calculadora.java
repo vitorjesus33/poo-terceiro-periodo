@@ -1,4 +1,4 @@
-package MURILO_WOLFF.primeirob.aulas.aulaum;
+package MURILO_WOLFF.primeirob.listas.listaum;
 
 import java.util.Scanner;
 
