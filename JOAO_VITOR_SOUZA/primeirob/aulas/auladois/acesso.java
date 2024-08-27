@@ -1,10 +1,11 @@
 package JOAO_VITOR_SOUZA.primeirob.aulas.auladois;
 
-public class acesso {
+public class Acesso {
+
+    private int idade;
 
     protected int idadeDois;
-    protected static final int valorImutavel = 0;
-    public static int getValorimutavel() {
-        return valorImutavel;
-    }
+
+    protected final static int VALOR_IMUTAVEL = 20;
+
 }
