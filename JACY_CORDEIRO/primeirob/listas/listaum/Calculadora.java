@@ -1,4 +1,4 @@
-package calculadora;
+package JACY_CORDEIRO.primeirob.listas.listaum
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -76,4 +76,3 @@ class Operacoes {
         }
     }
 }
-
