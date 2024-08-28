@@ -97,17 +97,17 @@ class RegistroVendas {
 }
 
 // Classe principal que contém o menu e a lógica da calculadora
-public class Calculadora {
+public class Calculadoradois {
     private final Scanner scanner;
     private final RegistroVendas registroVendas;
 
-    public Calculadora() {
+    public Calculadoradois() {
         this.scanner = new Scanner(System.in);
         this.registroVendas = new RegistroVendas("vendas.txt");
     }
 
     public static void main(String[] args) {
-        new Calculadora().executar();
+        new Calculadoradois().executar();
     }
 
     private void executar() {
