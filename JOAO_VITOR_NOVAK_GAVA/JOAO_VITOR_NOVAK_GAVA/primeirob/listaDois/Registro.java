@@ -1,4 +1,4 @@
-package JOAO_VITOR_NOVAK_GAVA.primeirob.aulaum;
+package JOAO_VITOR_NOVAK_GAVA.primeirob.listaDois;
 
 public class Registro {
     private final int quantidade;

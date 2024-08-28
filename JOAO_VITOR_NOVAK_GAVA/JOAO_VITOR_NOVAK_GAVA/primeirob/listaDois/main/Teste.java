@@ -1,7 +1,7 @@
-package JOAO_VITOR_NOVAK_GAVA.primeirob.aula;
+package JOAO_VITOR_NOVAK_GAVA.primeirob.listaDois.main;
 
-import JOAO_VITOR_NOVAK_GAVA.primeirob.aulaum.CalculadoraPreco;
-import JOAO_VITOR_NOVAK_GAVA.primeirob.aulaum.Historico;
+import JOAO_VITOR_NOVAK_GAVA.primeirob.listaDois.CalculadoraPreco;
+import JOAO_VITOR_NOVAK_GAVA.primeirob.listaDois.Historico;
 import java.util.Scanner;
 
 public class Teste {
