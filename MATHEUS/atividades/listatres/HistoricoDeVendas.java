@@ -9,6 +9,21 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class HistoricoDeVendas {
+    public static String getCaminho() {
+
+        File file = new File("Produto.java");
+        String caminho = "";
+        String os = System.getProperty("os.name").toLowerCase();
+        System.out.println(os);
+
+        if(!os.contains("linux")){
+             caminho = file.getAbsolutePath().replace("\\", "/")
+            .replace("Produto.java", "");
+        }
+
+        caminho = caminho + "MATHEUS" + file.separator + "atividades" + file.separator + "listatres" + file.separator;
+        return caminho;
+    }
 
     public static void gravaArquivo(String conteudo, String LocalDoArquivo) {
         File arFile = new File(LocalDoArquivo);
@@ -25,7 +40,7 @@ public class HistoricoDeVendas {
         }
 
         try (FileWriter writer = new FileWriter(arFile)) {
-            if (!LocalDoArquivo.equals("historicodevendas.csv")) {
+            if (!LocalDoArquivo.equals(getCaminho() + "historicodevendas.csv")) {
                 writer.write("dia do fechamento;quantidade;valor;valor inserido pelo usuario\n");
                 writer.append(conteudo + "\n");
                 return;
@@ -65,7 +80,7 @@ public class HistoricoDeVendas {
     public static String formatarLinha(String linha) {
         //usa o ; para separa a string lida, e usa o essa separação para formatar a exibição na tela
         String[] campos = linha.split(";");
-        return String.format("%-20s | %-14s | %-8s | %-8s", campos[0], campos[1], campos[2], campos.length > 3 ? campos[3] : "");
+        return String.format("%-20s | %-14s | %-10s | %-8s", campos[0], campos[1], campos[2], campos.length > 3 ? campos[3] : "");
     }
 
     public static String formataHora() {

@@ -1,12 +1,11 @@
 import java.util.LinkedList;
-import java.util.List; 
+import java.util.List;
 
 public class App {
-    static int quantidadeDodia = 0;
-    static double valorDevendasNoDia = 0;
-    static double valorInseridoPeloUsuario = 0;
+    
     
     public static void main(String[] args) throws Exception {
+        
         List<Produto> listaDeProdutos = new LinkedList<>();
         int menu;
 
@@ -23,14 +22,8 @@ public class App {
                 case 3 ->{
                     Menu.exibeHistorico();
                 }
-                case 4 -> {
-                    Menu.lancarTotalDoDia();
-                }
-                case 5 -> {
-                    Menu.buscarPorDiaExpecifico();
-                }
                 case 0 -> {                    
-                    Menu.finalizaSistema(quantidadeDodia,valorDevendasNoDia, valorInseridoPeloUsuario);
+                    Menu.finalizaSistema();
                 }
                 default -> {
                 }
