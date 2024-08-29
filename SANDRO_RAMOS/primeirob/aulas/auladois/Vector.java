@@ -1,4 +1,4 @@
-package primeirob.aulas.aula2;
+package primeirob.aulas.auladois;
 
 public class Vector {
     
