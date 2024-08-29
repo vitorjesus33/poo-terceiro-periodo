@@ -10,7 +10,7 @@ public class Dadosdasvendas {
 
         do {
             
-            System.out.println("\n--- Menu de Controle de Vendas ---");
+            System.out.println("\n===== Menu de Controle de Vendas =====");
             System.out.println("1. Registrar Vendas Diárias");
             System.out.println("2. Buscar Vendas Totais de um Dia");
             System.out.println("3. Buscar Vendas Totais de um Mês");
@@ -42,9 +42,9 @@ public class Dadosdasvendas {
 
     private static void registrarVendas(Scanner scanner) {
         System.out.print("Informe o mês (1-12): ");
-        int mes = scanner.nextInt() - 1; // Ajusta para o índice da matriz
-        System.out.print("Informe o dia (1-31): ");
-        int dia = scanner.nextInt() - 1; // Ajusta para o índice da matriz
+        int mes = scanner.nextInt() - 1;
+        System.out.print("Informe o dia (1-30): ");
+        int dia = scanner.nextInt() - 1;
         System.out.print("Informe a quantidade de vendas: ");
         int quantidade = scanner.nextInt();
 
@@ -56,12 +56,11 @@ public class Dadosdasvendas {
         }
     }
 
-    // Funcionalidade para buscar vendas de um dia específico
     private static void buscarVendasDia(Scanner scanner) {
         System.out.print("Informe o mês (1-12): ");
-        int mes = scanner.nextInt() - 1; // Ajusta para o índice da matriz
+        int mes = scanner.nextInt() - 1; 
         System.out.print("Informe o dia (1-30): ");
-        int dia = scanner.nextInt() - 1; // Ajusta para o índice da matriz
+        int dia = scanner.nextInt() - 1; 
 
         if (mes >= 0 && mes < 12 && dia >= 0 && dia < 30) {
             System.out.println("Vendas no dia " + (dia + 1) + "/" + (mes + 1) + ": " + vendas[mes][dia]);
