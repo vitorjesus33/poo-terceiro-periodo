@@ -16,6 +16,6 @@ public class paradigmSample {
         List<String> nomeSemEspaco = new ArrayList<>();
 
         nomeSemEspacoDois = nomes.stream()
-        .filter(nome )
+        .filter(nome)
     }
 }
