@@ -27,10 +27,12 @@ Paradigma é descrito nos dicionários como um substantivo masculino que signifi
         
             end.
     
-- ### Programação estruturada.
-    - 
+- ### Programação Procedural.
+    -  De forma geral a programação procedural também é uma programação estruturada, como uma evoulção da cracteristica de modularização da programação estruturada, mas ainda não é uma programação modular, como a programação orientada a objetos
 - ### Programação Orientada a Objetos.
+  - Programação orientada a objetos é um dos paradimas mais ultilizados na atualidade, ela permite abstrair as estruturas de dados utilizando objestos e classes, facilitando o programador a reutilizar códigos e modularizar a programação
 ## Paradigma declarativo
 - ### Programação Funcional
+  - é o paradigma da programação que se concentrea em resolver equações matematicas. Ela trata a computação como a avaliação de funções e evita o uso de estados mutáveis e dados compartilhados. parte do principio que tudo são funções parte do principio em que o computador tem uma sequencia de funçoes matematica para resolver e elas, comprirão a resolução de um problema
 - ### Programação Lógica
-
+    - neste paradigma o principal foco é a definição do probelma e deixar o sistema decidir como resolver esse problema, o trabalho principal e definir qual é o problema a ser resolvido. e deixar o sistema escolher qual a menlhor forma para resolver o probelma, em resumo se preocupa com oque e não com o como, um exemplo disso são os arrays de java script que são listas e não arrays
