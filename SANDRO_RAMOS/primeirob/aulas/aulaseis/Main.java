@@ -26,6 +26,18 @@ public class Main {
 
         alunoNinja.apresentarse();
         ninjaDois.apresentarse();
+
+        Hokage narutoHokage = new Hokage();
+
+        ninjaDois.name = "Naruto";
+        ninjaDois.aldeia = "Folha";
+        ninjaDois.cla = "Uchiha";
+        ninjaDois.idade = 18;
+        ninjaDois.nomeJutso = "Chidori";
+        ninjaDois.equipamento = "Shuriken";
+
+        alunoNinja.realizarInvocacao();
+        narutoHokage.realizarInvocacao();
     }
 
 }

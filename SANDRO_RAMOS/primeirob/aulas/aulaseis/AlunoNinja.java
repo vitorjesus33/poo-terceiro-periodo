@@ -17,4 +17,18 @@ public class AlunoNinja extends Ninja {
     public void realizarJutso() {
         System.out.println("Realizando jutso " + nomeJutso + "!!");
     }
+
+    @Override
+    public void realizarInvocacao() {
+        System.out.println("Ele invoca um animal fraco!");
+    }
+
+    public void realizarMissao(String missao) {
+        //processo
+        realizarMissao(missao, false);
+    }
+
+    public void realizarMissao(String missao, boolean ativo) {
+        //processo com tempo
+    }
 }

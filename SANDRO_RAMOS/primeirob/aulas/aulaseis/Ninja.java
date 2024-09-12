@@ -1,6 +1,6 @@
 package primeirob.aulas.aulaseis;
 
-public class Ninja {
+public abstract class Ninja {
 
     String name;
 
@@ -21,5 +21,7 @@ public class Ninja {
     public void realizarJutso() {
         System.out.println("Realizando jutso " + nomeJutso + "!!");
     }
+
+    public abstract void realizarInvocacao();
 
 }
